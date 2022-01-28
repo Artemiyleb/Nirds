@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
     <link rel="stylesheet" href="css/normalize.css">
@@ -15,124 +15,139 @@
     <title>NЁrds Design Studio</title>
 </head>
 
-<body>
+<body class="page-body">
 
-    <header>
-        <nav>
-            <a> <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип NЁrds Design Studio">
+    <header class="main-header">
+        <nav class="main-navigaion">
+            <a class="main-header-logo" href="index.html"> <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип NЁrds Design Studio">
             </a>
-            <ul>
-                <li><a href="blank.html">Студия</a></li>
+            <ul class="site-navigation">
+                <li>
+                    <a href="blank.html">Студия</a>
+                </li>
                 <li><a href="blank.html">Клиенты</a></li>
                 <li><a href="catalog.html">Магазин</a></li>
                 <li><a href="blank.html">Контакты</a></li>
             </ul>
-            <a href="blank.html">Корзина</a>
+            <a class="cart-link" href="blank.html">Корзина</a>
         </nav>
     </header>
 
-    <main>
+    <main class="container">
         <h1>NЁrds Design Studio</h1>
 
-        <section>
+        <section class="slider">
             <h2>Слайдер</h2>
             <h3>Долго, дорого, скурпулезно</h3>
             <p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-            <a href="#">узнать больше</a>
+            <a class="button red-button" href="#">узнать больше</a>
             <figure>
                 <a href="#">
                     <img src="img/slider1.png" width="760" height="431" alt="Долго, дорого, скурпулезно">
                 </a>
             </figure>
         </section>
-        <section>
+        <section class="services">
             <h2>Услуги</h2>
-            <ul>
-                <li>
+            <ul class="services-list">
+                <li class="services-item">
                     <img src="img/web.png" width="300" height="146" alt="Веб-сайты">
                     <h3>Веб-сайты</h3>
                     <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-                    <a href="#">заказать</a>
+                    <a class="button red-button" href="#">заказать</a>
                 </li>
-                <li>
+                <li class="services-item">
                     <img src="img/app.png" width="300" height="146" alt="Приложения">
                     <h3>Приложения</h3>
                     <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-                    <a href="#">заказать</a>
+                    <a class="button green-button" href="#">заказать</a>
                 </li>
-                <li>
+                <li class="services-item">
                     <img src="img/pres.png" width="300" height="146" alt="Презентации">
                     <h3>презентации</h3>
                     <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-                    <a href="#">заказать</a>
+                    <a class="button yellow-button" href="#">заказать</a>
+                </li>
+            </ul>
+            <hr class="services-line">
+        </section>
+        <section class="about">
+            <section class="about-left">
+                <h2>О компании</h2>
+
+                <h3>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
+                <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+                <h4>Выполняем заказы на разработку:</h4>
+                <ul class="about-left-list">
+                    <li>Веб-сайтов любой сложности</li>
+                    <li>Мобильных приложений для iOS и Android</li>
+                    <li>Слайдшоу и видео для корпоративных презентаций</li>
+                </ul>
+            </section>
+            <section class="about-right">
+                <figure><img src="img/nerds-illustration.png" width="360" height="208" alt="О компании"></figure>
+                <h4>с 2004 года Любим точность во всем:</h4>
+                <ul class="about-right-list">
+                    <li class="about-right-item-title">146<sup class="title-sup">%</sup></li>
+                    <li class="about-right-item-text">Уровень самоотдачи</li>
+                </ul>
+                <ul>
+                    <li class="about-right-item-title">100<sup class="title-sup">%</sup></li>
+                    <li class="about-right-item-text">Соблюдение сроков</li>
+                </ul>
+                <ul>
+                    <li class="about-right-item-title">50<sup class="title-sup">%</sup></li>
+                    <li class="about-right-item-text">Минимальная предоплата</li>
+                </ul>
+            </section>
+            <hr class="services-line">
+        </section>
+        <section class="clients">
+            <h2>Клиенты</h2>
+            <figure class="clients-item">
+                <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo_htmlacademy.svg" width="199" height="57" alt="HTML Academy"></a>
+            </figure>
+            <figure class="clients-item">
+                <a href="#"><img src="img/borodinski.png" width="206" height="90" alt="Barbershop BORODINSKI"></a>
+            </figure>
+            <figure class="clients-item">
+                <a href="#"><img src="img/pink.png" width="185" height="52" alt="PINK"></a>
+            </figure>
+            <figure class="clients-item">
+                <a href="#"><img src="img/mishka.png" width="173" height="84" alt="Mishka"></a>
+            </figure>
+            <hr class="services-line">
+        </section>
+        <section class="map">
+            <figure class="map-img">
+                <figure class="map-marker">
+                    <img src="img/icon/map-marker.png" width="211" height="186" alt="маркер-указатель">
+                </figure>
+                <img src="img/map.png" width="1440" height="416" alt="Карта">
+            </figure>
+            <section class="map-contact">
+                <h3>NЁRDS DESIGN STUDIO</h3>
+                <p>наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</p><br>
+                <a class="contact-phone" href="tel:+78005558626">+7 800 555-86-28</a><br>
+                <a class="button red-button" href="#">Напишите нам</a>
+            </section>
+        </section>
+    </main>
+    <footer class="main-footer">
+        <section class="footer-social">
+            <ul class="footer-list">
+                <li class="footer-item-social">
+                    <a href="#"><img src="img/icon/vk-icon.png" width="26" height="15" alt="VK"></a>
+                </li>
+                <li class="footer-item-social">
+                    <a href="#"><img src="img/icon/fb-icon.png" width="12" height="22" alt="Facebook"></a>
+                </li>
+                <li class="footer-item-social">
+                    <a href="#"><img src="img/icon/insta-icon.png" width="21" height="21" alt="Instagram"></a>
                 </li>
             </ul>
         </section>
-        <section>
-            <h2>О компании</h2>
-
-            <h3>Мы — маленькая, но гордая дизайн-студия из Краснодара.</h3>
-            <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-            <h4>Выполняем заказы на разработку:</h4>
-            <ul>
-                <li>Веб-сайтов любой сложности</li>
-                <li>Мобильных приложений для iOS и Android</li>
-                <li>Слайдшоу и видео для корпоративных презентаций</li>
-            </ul>
-        </section>
-        <section>
-            <figure><img src="img/nerds-illustration.png" width="360" height="208" alt="О компании"></figure>
-            <h4>с 2004 года Любим точность во всем:</h4>
-            <ul>
-                <li>146%</li>
-                <li>Уровень самоотдачи</li>
-            </ul>
-            <ul>
-                <li>100%</li>
-                <li>Соблюдение сроков</li>
-            </ul>
-            <ul>
-                <li>50%</li>
-                <li>Минимальная предоплата</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Клиенты</h2>
-            <figure>
-                <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo_htmlacademy.svg" width="199" height="57" alt="HTML Academy"></a>
-            </figure>
-            <figure>
-                <img src="img/borodinski.png" width="206" height="90" alt="Barbershop BORODINSKI">
-            </figure>
-            <figure>
-                <img src="img/pink.png" width="185" height="52" alt="PINK">
-            </figure>
-            <figure>
-                <img src="img/mishka.png" width="173" height="84" alt="Mishka">
-            </figure>
-        </section>
-    </main>
-    <section>
-        <figure>
-            <img src="img/map.png" width="1440" height="416" alt="Карта">
-        </figure>
-        <section>
-            <h3>NЁRDS DESIGN STUDIO</h3>
-            <p>наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
-            <p>+7 800 555-86-28</p>
-            <a href="#">Напишите нам</a>
-        </section>
-
-    </section>
-    </main>
-    <footer>
-        <ul>
-            <li><img src="img/icon/vk-icon.png" width="81" height="81" alt="VK"></li>
-            <li><img src="img/icon/fb-icon.png" width="81" height="81" alt="Facebook"></li>
-            <li><img src="img/icon/insta-icon.png" width="81" height="81" alt="Instagram"></li>
-        </ul>
-
-        <section>
+        <section class="footer-text">
             <h3>Давайте дружить, это выгодно!</h3>
             <p>Скидка 10% для друзей из социальных сетей.</p>
         </section>
