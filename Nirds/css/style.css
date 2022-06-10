@@ -738,6 +738,7 @@
             }
 
             .popup-form img {
+                cursor: pointer;
                 opacity: 0.3;
             }
 
@@ -751,6 +752,7 @@
 
             .popup-form .button {
                 padding: 17px 38px 15px 38px;
+                cursor: pointer;
             }
             /* catalog.html */
             /* Title */
@@ -934,6 +936,7 @@
                 opacity: 0.4;
                 background-repeat: no-repeat;
                 margin-left: -36px;
+                cursor: pointer;
             }
 
             .radio-input:checked+.radio-custom {
@@ -985,6 +988,7 @@
                 color: var(--basic-light-black);
                 background-repeat: no-repeat;
                 margin-left: -36px;
+                cursor: pointer;
             }
 
             .checkbox-input:checked+.check-box {
@@ -1064,6 +1068,7 @@
                 border: 0;
                 border-radius: 3px;
                 padding: 16px 88px 16px 88px;
+                cursor: pointer;
             }
 
             .grey-button:hover {
