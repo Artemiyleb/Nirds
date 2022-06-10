@@ -16,70 +16,82 @@
 </head>
 
 <body class="page-body">
-
-    <header class="main-header">
-        <nav class="main-navigaion">
-            <a class="main-header-logo" href="index.html"> <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип NЁrds Design Studio">
-            </a>
-            <ul class="site-navigation">
-                <li>
-                    <a href="blank.html">Студия</a>
-                </li>
-                <li><a href="blank.html">Клиенты</a></li>
-                <li><a href="catalog.html">Магазин</a></li>
-                <li><a href="blank.html">Контакты</a></li>
-            </ul>
-            <a class="cart-link" href="blank.html">Корзина</a>
-        </nav>
-    </header>
-
-    <main>
-        <section class="map">
-            <figure class="map-img">
-                <figure class="map-marker">
-                    <img src="img/icon/map-marker.png" width="211" height="186" alt="маркер-указатель">
-                </figure>
-                <img src="img/map.png" width="1440" height="416" alt="Карта">
+    <div class="wrapper">
+        <header class="main-header clearfix">
+            <figure class="main-logo">
+                <a class="main-header-logo" href="index.html"> <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип NЁrds Design Studio">
+                </a>
             </figure>
-            <section class="map-contact">
-                <h3>NЁRDS DESIGN STUDIO</h3>
-                <p>наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</p><br>
-                <a class="contact-phone" href="tel:+78005558626">+7 800 555-86-28</a><br>
-                <a class="button red-button" href="#">Напишите нам</a>
+            <nav class="main-navigaion">
+                <ul class="site-navigation">
+                    <li>
+                        <a href="blank.html">Студия</a>
+                    </li>
+                    <li><a href="blank.html">Клиенты</a></li>
+                    <li><a href="catalog.html">Магазин</a></li>
+                    <li><a href="blank.html">Контакты</a></li>
+                </ul>
+            </nav>
+            <div class="cart">
+
+                <a class="cart-link" href="blank.html"> <img src="img/cart.svg" alt="корзина">Корзина</a>
+            </div>
+        </header>
+
+        <main>
+            <section class="map">
+                <section class="map-contact">
+                    <h3>NЁRDS DESIGN STUDIO</h3>
+                    <p>наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</p><br>
+                    <a class="contact-phone" href="tel:+78005558626">+7 800 555-86-28</a><br>
+                    <a class="button red-button" href="#">Напишите нам</a>
+                </section>
             </section>
-        </section>
-    </main>
-    <footer class="main-footer">
-        <section class="footer-social">
-            <ul class="footer-list">
-                <li class="footer-item-social">
-                    <a href="#"><img src="img/icon/vk-icon.png" width="26" height="15" alt="VK"></a>
-                </li>
-                <li class="footer-item-social">
-                    <a href="#"><img src="img/icon/fb-icon.png" width="12" height="22" alt="Facebook"></a>
-                </li>
-                <li class="footer-item-social">
-                    <a href="#"><img src="img/icon/insta-icon.png" width="21" height="21" alt="Instagram"></a>
-                </li>
-            </ul>
-        </section>
-        <section class="footer-text">
-            <h3>Давайте дружить, это выгодно!</h3>
-            <p>Скидка 10% для друзей из социальных сетей.</p>
+        </main>
+        <footer class="main-footer">
+            <section class="footer-social">
+                <ul class="footer-list">
+                    <li class="footer-item-social">
+                        <a href="#"><img src="img/icon/vk-icon.png" width="26" height="15" alt="VK"></a>
+                    </li>
+                    <li class="footer-item-social">
+                        <a href="#"><img src="img/icon/fb-icon.png" width="12" height="22" alt="Facebook"></a>
+                    </li>
+                    <li class="footer-item-social">
+                        <a href="#"><img src="img/icon/insta-icon.png" width="21" height="21" alt="Instagram"></a>
+                    </li>
+                </ul>
+            </section>
+            <section class="footer-text">
+                <h3>Давайте дружить, это выгодно!</h3>
+                <p>Скидка 10% для друзей из социальных сетей.</p>
+            </section>
+
+
+            <section class="popup">
+
+                <form class="popup-form" action="https://echo.htmlacademy.ru/courses" method="get">
+                    <h3 ">Напишите нам</h3>
+
+                <img src="img/icon/close-cross.svg " width="21 " height="21 " alt="Закрыть форму ">
+                <div class="form-label-row ">
+                <div class="form-label-name ">
+                <label for="name " class="form-label ">Ваше имя:</label> <input class="form-input " id="name " type="text " name="name " value="Имя Фамилия ">
+              </div>
+              <div class="form-label-email ">
+                <label for="email " class="form-label ">Ваш email:</label><input class="form-input " id="email " type="email " name="email " value="email@example.com ">
+              </div>
+            </div>
+            <div class="form-label-text ">
+                <label class="form-label " for="text ">Текст письма:</label>
+                <textarea class="form-input " id="text ">В свободной форме</textarea>
+              </div>
+                <input type="button " class="button red-button " name="button " value="отправить ">
+            </form>
         </section>
     </footer>
-    <section class="popup">
-        <form class="popup-form" action="https://echo.htmlacademy.ru/courses" method="get">
-            <h3>Напишите нам</h3>
-            <img src="img/icon/close-cross.svg" width="21" height="21" alt="Закрыть форму">
-            <label class="form-label">Ваше имя: <input class="form-input" type="text" name="name" value="Имя Фамилия"></label>
-            <label class="form-label">Ваш email: <input class="form-input" type="email" name="email" value="email@example.com"></label>
-            <label class="form-label" for="text">Текст письма:</label>
-            <textarea class="form-input" id="text">В свободной форме</textarea>
-            <input type="button" class="button red-button" name="button" value="отправить">
-        </form>
-    </section>
-    <BR>
+</div>
+
 </body>
 
 
