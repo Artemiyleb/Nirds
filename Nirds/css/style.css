@@ -2,13 +2,17 @@
 
 :root {
     --basic-black: #000000;
+    --opacity1-grey: rgba(0, 1, 1, 0.1);
+    --opacity25-grey: rgba(0, 0, 0, 0.25);
     --opacity3-black: rgba(0, 0, 0, 0.3);
+    --opacity5-black: rgba(0, 0, 0, 0.5);
     --opacity6-black: rgba(0, 0, 0, 0.6);
     --basic-extra-black: #444444;
     --basic-light-black: #283136;
     --basic-social-grey: #E1E1E1;
     --basic-gray: #888888;
     --basic-gray6: #666;
+    --basic-gray4: #4d4d4d;
     --basic-light-gray: #A6A6A6;
     --basic-extra-gray: #EEEEEE;
     --basic-input-gray: #D7DCDE;
@@ -17,6 +21,7 @@
     --basic-form-active: #D5D5D5;
     --basic-form-focus: #dbdbdb;
     --basic-white: #ffffff;
+    --basic-white1: rgba(0, 0, 0, 0.001);
     --basic-white01: rgba(0, 0, 0, 0.0001);
     --basic-green: #00CA74;
     --basic-green-hover: #00BC6C;
@@ -30,6 +35,9 @@
     --basic-range-white: #F1F1F1;
     --basic-range-bg: #ababab;
     --basic-range-shadow: #cfcfcf;
+    --box-shadow: #00000066;
+    --form-text: #0001011A;
+    --img-shadow: #00000040;
 }
 
 
@@ -324,7 +332,7 @@ li {
     color: var(--basic-white);
     opacity: 0.3;
     background-color: var(--basic-red-active);
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    box-shadow: inset 0px 3px 0px var(--opacity1-grey);
 }
 
 .green-button {
@@ -341,7 +349,7 @@ li {
     color: var(--basic-white);
     opacity: 0.3;
     background-color: var(--basic-green-active);
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    box-shadow: inset 0px 3px 0px var(--opacity1-grey);
 }
 
 .yellow-button {
@@ -358,7 +366,7 @@ li {
     color: var(--basic-white);
     opacity: 0.3;
     background-color: var(--basic-yellow-active);
-    box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+    box-shadow: inset 0px 3px 0px var(--opacity1-grey);
 }
 
 .slider .button {
@@ -663,7 +671,7 @@ ul.about-left-list li {
     align-items: center;
     justify-content: center;
     box-shadow: 0px 3px 0px 0px #0001011A inset;
-    background: linear-gradient(0deg, #D7373B, #D7373B), var(--basic-white);
+    background: linear-gradient(0deg, var(--basic-red-active), var(--basic-red-active)), var(--basic-white);
 }
 
 .footer-text {
@@ -692,7 +700,7 @@ ul.about-left-list li {
     left: 0;
     width: 100%;
     height: 100vh;
-    background: rgba(0, 0, 0, 0.5);
+    background: var(--opacity5-black);
     opacity: 0;
     pointer-events: none;
     transition: 0.5s all;
@@ -711,7 +719,7 @@ ul.about-left-list li {
     transform: translate(-50%, -50%) scale(0);
     width: 960px;
     height: 590px;
-    box-shadow: 0px 20px 40px 0px #00000066;
+    box-shadow: 0px 20px 40px 0px var(--box-shadow);
     background-color: var(--basic-white);
     transition: 0.5s all;
 }
@@ -1127,17 +1135,17 @@ fieldset {
 
 .form-text input:active {
     background: var(--basic-red);
-    box-shadow: 0px 3px 0px 0px #0001011A inset;
-    color: rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 3px 0px 0px var(--form-text) inset;
+    color: var( --opacity3-black);
 }
 
 .form-text input:focus {
     width: 74px;
     height: 32px;
-    background: rgba(0, 0, 0, 0.001);
+    background: var(--basic-white1);
     color: var(--basic-black);
     outline: none;
-    border: 3px solid #DBDBDB;
+    border: 3px solid var(--basic-form-focus);
     border-radius: 3px;
 }
 
@@ -1167,7 +1175,7 @@ fieldset {
 
 .grey-button:active {
     background-color: var(--basic-form-active);
-    box-shadow: 0px 3px 0px 0px #0001011A inset;
+    box-shadow: 0px 3px 0px 0px var( --form-text) inset;
     color: var(--opacity3-black);
 }
 
@@ -1225,7 +1233,7 @@ fieldset {
     width: 358px;
     height: 40px;
     border-radius: 5px 5px 0 0;
-    background-color: #4d4d4d;
+    background-color: var(--basic-gray4);
     opacity: 0.12;
 }
 
@@ -1245,12 +1253,12 @@ fieldset {
 .site-img:hover {
     width: 358px;
     height: 578px;
-    box-shadow: 0px 6px 15px 0px #00000040;
+    box-shadow: 0px 6px 15px 0px var(--img-shadow);
 }
 
 .catalog-item:hover>.site-top {
     opacity: 1;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 4px var(--opacity25-grey);
 }
 
 .catalog-item:hover>.site-text {
@@ -1282,7 +1290,7 @@ fieldset {
 }
 
 .site-text-heading:active {
-    text-shadow: 0px 4px 4px 0px #00000040;
+    text-shadow: 0px 4px 4px 0px var(--img-shadow);
     color: var(--basic-black);
     opacity: 0.3;
 }
@@ -1345,7 +1353,7 @@ fieldset {
 
 .page-item:active:not(.page-active) {
     background-color: var(--basic-form-active);
-    box-shadow: 0px 3px 0px 0px #0001011A inset;
+    box-shadow: 0px 3px 0px 0px var(--form-text) inset;
     color: var(--opacity3-black);
 }
 
