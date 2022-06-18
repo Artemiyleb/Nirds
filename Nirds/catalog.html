@@ -16,32 +16,41 @@
 </head>
 
 <body class="page-body">
+
+    <div class="main-header-bg">
+        <div class="wrapper">
+            <header class="main-header clearfix">
+
+                <figure class="main-logo">
+                    <a class="main-header-logo" href="index.html"> <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип NЁrds Design Studio">
+                    </a>
+                </figure>
+                <nav class="main-navigaion">
+                    <ul class="site-navigation">
+                        <li>
+                            <a href="blank.html">Студия</a>
+                        </li>
+                        <li><a href="blank.html">Клиенты</a></li>
+                        <li><a href="catalog.html">Магазин</a></li>
+                        <li><a href="blank.html">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="cart">
+
+                    <a class="cart-link" href="blank.html"> <img src="img/cart.svg" alt="корзина">Корзина</a>
+                </div>
+
+
+
+            </header>
+        </div>
+    </div>
+
+
+    <section class="main-title">
+        <h1>Магазин готовых шаблонов</h1>
+    </section>
     <div class="wrapper">
-        <header class="main-header clearfix">
-            <figure class="main-logo">
-                <a class="main-header-logo" href="index.html"> <img src="img/nerds-logo.svg" width="160" height="65" alt="Логотип NЁrds Design Studio">
-                </a>
-            </figure>
-            <nav class="main-navigaion">
-                <ul class="site-navigation">
-                    <li>
-                        <a href="blank.html">Студия</a>
-                    </li>
-                    <li><a href="blank.html">Клиенты</a></li>
-                    <li><a href="catalog.html">Магазин</a></li>
-                    <li><a href="blank.html">Контакты</a></li>
-                </ul>
-            </nav>
-            <div class="cart">
-
-                <a class="cart-link" href="blank.html"> <img src="img/cart.svg" alt="корзина">Корзина</a>
-            </div>
-        </header>
-
-
-        <section class="main-title">
-            <h1>Магазин готовых шаблонов</h1>
-        </section>
         <main class="container">
             <h2 class="hidden">Товары</h2>
             <section class="main-shop clearfix">
@@ -266,15 +275,23 @@
                 </section>
             </section>
         </main>
-        <section class="map">
-            <section class="map-contact">
-                <h3>NЁRDS DESIGN STUDIO</h3>
-                <p>наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</p><br>
-                <a class="contact-phone" href="tel:+78005558626">+7 800 555-86-28</a><br>
-                <a class="button red-button" href="#">Напишите нам</a>
-            </section>
+    </div>
+    <section class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d7987.007622532461!2d30.298996199497346!3d59.96943874896851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1z0L3QsNCxLiDQoNC10LrQuCDQmtCw0YDQv9C-0LLQutC4LCA1INC70LjRgiDQnywg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LM!5e0!3m2!1sru!2sru!4v1655551877716!5m2!1sru!2sru"
+            width="100%" height="416" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+        <section class="map-contact">
+
+            <h3>NЁRDS DESIGN STUDIO</h3>
+            <p>наб. Реки Карповки,<br> 5 лит П, Санкт-Петербург</p><br>
+            <a class="contact-phone" href="tel:+78005558626">+7 800 555-86-28</a><br>
+            <a class="button red-button open-popup" href="#">Напишите нам</a>
         </section>
-        </main>
+
+    </section>
+    </main>
+    <div class="wrapper">
         <footer class="main-footer">
             <section class="footer-social">
                 <ul class="footer-list">
@@ -295,30 +312,34 @@
             </section>
 
 
-            <section class="popup">
 
-                <form class="popup-form" action="https://echo.htmlacademy.ru/courses" method="get">
-                    <h3 ">Напишите нам</h3>
+        </footer>
+    </div>
+    <div class="popup__bg">
+        <section class="popup">
 
-              <img src="img/icon/close-cross.svg " width="21 " height="21 " alt="Закрыть форму ">
-              <div class="form-label-row ">
-              <div class="form-label-name ">
-              <label for="name " class="form-label ">Ваше имя:</label> <input class="form-input " id="name " type="text " name="name " value="Имя Фамилия ">
-            </div>
-            <div class="form-label-email ">
-              <label for="email " class="form-label ">Ваш email:</label><input class="form-input " id="email " type="email " name="email " value="email@example.com ">
-            </div>
-          </div>
-          <div class="form-label-text ">
-              <label class="form-label " for="text ">Текст письма:</label>
-              <textarea class="form-input " id="text ">В свободной форме</textarea>
-            </div>
-              <input type="button " class="button red-button " name="button " value="отправить ">
-          </form>
-      </section>
-  </footer>
+            <form class="popup-form" action="https://echo.htmlacademy.ru/courses" method="get">
+                <h3 ">Напишите нам</h3>
+
+    <img src="img/icon/close-cross.svg " class="close-popup " width="21 " height="21 " alt="Закрыть форму ">
+    <div class="form-label-row ">
+    <div class="form-label-name ">
+    <label for="name " class="form-label ">Ваше имя:</label> <input class="form-input " id="name " type="text " name="name " value="Имя Фамилия ">
+  </div>
+  <div class="form-label-email ">
+    <label for="email " class="form-label ">Ваш email:</label><input class="form-input " id="email " type="email " name="email " value="email@example.com ">
+  </div>
 </div>
-<script src="main.js "></script>
+<div class="form-label-text ">
+    <label class="form-label " for="text ">Текст письма:</label>
+    <textarea class="form-input " id="text ">В свободной форме</textarea>
+  </div>
+    <input type="button " class="button red-button " name="button " value="отправить ">
+</form>
+</section>
+  </div>
+
+  <script src="js/popup.js "></script>
 </body>
 
 
